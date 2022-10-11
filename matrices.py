@@ -52,7 +52,6 @@ def process_file(file_name: str, print_header: bool = False, reference_value=0):
 
 
 if __name__ == '__main__':
-    print(get_process_file_list('20220928114409'))
     for file in get_process_file_list('20220928114409'):
         process_file(file)
         print('-' * 70)
