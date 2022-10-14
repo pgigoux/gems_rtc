@@ -22,3 +22,5 @@ Data files:
 * data/*20221013130313.txt Write 1's to SDRAM, memory dump shows 1's, data is corrupted on the display (part of dm0).
 
 * data/*20221013131110.txt Write 5's to SDRAM, memory dump shows 5's, data is corrupted on the display (part of dm0).
+ 
+* data/*20221013201122.txt Files from the production RTC with good reconstructor data
