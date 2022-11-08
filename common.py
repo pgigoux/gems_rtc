@@ -75,14 +75,14 @@ def get_destination_file_list(source_directory=DEFAULT_SOURCE_FOLDER,
     return output_list
 
 
-def get_process_file_list(timestamp: str, directory=DESTINATION_DATA_FOLDER) -> list:
+def get_process_file_list(pattern: str, directory=DESTINATION_DATA_FOLDER) -> list:
     """
     Return the name of the files that match a given timestamp in the local data directory.
-    :param: timestamp: timestamp of the form <date><time> (e.g. 20220922180942)
+    :param: pattern: pattern used to match file names
     :param: directory: destination directory
     :return: list of files
     """
-    return [os.path.join(directory,x) for x in os.listdir(directory) if re.search(timestamp, x)]
+    return [os.path.join(directory,x) for x in os.listdir(directory) if re.search(pattern, x)]
 
 
 if __name__ == '__main__':

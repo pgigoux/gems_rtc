@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+"""
+This program is now deprecated. Use check_files instead.
+"""
 from common import get_process_file_list
 
 
